@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+li {
+  margin: 1%;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+  -webkit-appearance: none;
+}
+
+li label i {
+  padding: 30px;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.8),
+    2px 2px 4px rgba(0, 0, 0.2);
+}
+
+li label input:checked ~ i {
+  color: #1badf9;
+  box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.8),
+    3px 3px 8px rgba(0, 0, 0.8), inset 2px 2px 8px rgba(255, 255, 255, 0.1);
+}
